@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Create new Activity', new_activity_record_path, class:"btn btn-primary btn-lg btn-block mb-4" %>
+
+
+<div class="all-activities">
+<h2 class="text-center">All Activities</h2>
+<div class="activities row">
+<% @activity_records.each do |activity_record|  %>
+  <div class="card text-left activity col-lg-3 col-md-4 col-sm-12">
+    <div class="card-block">
+      <h4 class="card-title">Activity: <%= activity_record.activity.value %></h4>
+      <h4 class="card-text">Date: <%= activity_record.Date %></h4>
+      <h4 class="card-text">Duration: <%= activity_record.duration %></h4>
+      <h4 class="card-text">Comment: <%= activity_record.comment %></h4>
+      <%= link_to "Show more", activity_record %>
+    </div>
+  </div>
+
+<% end %>
+</div>
+</div>
+
+<br>

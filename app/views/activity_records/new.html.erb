@@ -1,0 +1,7 @@
+<div class="activity-record-form">
+<h3 class="text-center mb-5">New Activity Record</h3>
+
+<%= render 'form', activity_record: @activity_record, activities: @activities %>
+
+<p class="btn btn-success mt-5"><%= link_to 'Back', activity_records_path,  {class: "text-white"} %></p>
+</div>
