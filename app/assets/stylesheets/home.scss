@@ -1,0 +1,99 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.nav-custom {
+  background-color: rgb(66, 66, 66);
+  // height: 80px;
+  .navbar-brand {
+    color: #ffffff !important;
+  }
+  div {
+    ul {
+      li {
+        a {
+          color: #ffffff !important;
+        }
+      }
+    }
+  }
+}
+
+.all-activities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  h2 {
+    margin-bottom: 3%;
+  }
+  .activities {
+    width: 100%;
+    display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .activity {
+      // width: 30%;
+      margin: 0 20px 20px 0;
+    }
+  }
+}
+
+.activity-record {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+  .one-activity {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.form-div {
+  border: 2px rgb(116, 113, 113) solid;
+  padding: 50px 90px;
+  background-color: #d8d6d6;
+}
+
+.foot-links {
+  color: aliceblue;
+}
+
+.foot-links > li {
+  display: inline;
+  margin-right: 10px;
+  color: #ffffff !important;
+}
+
+.foot-links > li > a {
+  color: #ffffff !important;
+}
+
+.foot-div {
+  margin-top: 16%;
+  background-color: rgb(66, 66, 66);
+  height: 80px;
+.foot-lists {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    list-style: none;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+}

@@ -1,0 +1,13 @@
+<div class="activity-record">
+
+<div class="one-activity">
+  <h4 class="card-title">Activity: <%= @activity_record.activity.value %></h4>
+      <h4 class="card-text p-1">Date: <%= @activity_record.Date %></h4>
+      <h4 class="card-text p-1">Duration: <%= @activity_record.duration.strftime("%I:%m") %> Hours</h4>
+      <h4 class="card-text p-1">Comment: <%= @activity_record.comment %></h4>
+</div>
+
+<%= link_to 'Edit', edit_activity_record_path(@activity_record), class: "btn btn-primary m-3" %>
+<%= link_to 'Back', activity_records_path, class: "btn btn-success" %>
+<%= link_to 'Delete', @activity_record, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger mt-3" %>
+</div>
